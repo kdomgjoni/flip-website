@@ -1,0 +1,47 @@
+
+@import "../../node_modules/normalize.css/normalize.css";
+
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+@import "base/font";
+
+@import "layout/grid";
+
+
+body{
+	display: flex;
+}
+
+header{
+	width: 30px;
+	height: 100vh;
+	background-color: red;
+	position: relative !important;
+	nav{
+		height: 100%;
+		position: fixed;
+	}
+}
+.image{
+	position: relative;
+	height: 100vh;
+	width: 50%;
+	background-color: brown;
+	&_test{
+		height: 100%;
+		position: fixed;
+	}
+}
+
+.description{
+	position: relative;
+	width: 50%;
+}
+
+
