@@ -1,0 +1,59 @@
+.main-container{
+	width: 100%;
+	padding: 0 10rem;
+	@include respond(tab-port){
+		padding: 0;
+	}
+}
+.no-padding{
+	padding: 0;
+}
+.footer-margin{
+	margin-bottom: 13rem;
+	display: flex;
+	justify-content: flex-end;
+	padding: 2rem;
+	h1{
+		font-family: Futura-Medium;
+		font-size: 1.3rem;
+	}
+}
+@include respond(tab-port){
+	 .tablet{
+		padding-right: 0;
+	    padding-left: 0; 
+	    flex: 0 0 100%;
+    	max-width: 100%;
+	 }
+	 .row-responsiv{
+	 	margin: 0;
+	 }
+
+	.header-active{
+		height: 90vh !important;
+		transition: all .5s;
+	}
+	.menu-active{
+		display: flex !important;
+		transition: all .1s;
+		visibility: visible !important;
+		opacity: 1 !important;
+	}
+	.search-active{
+	    width: 25rem !important;
+		visibility: visible !important;
+		transform-origin: center;
+	}
+}
+.blue-image{
+	background-color: #034F84 !important;
+}
+.content-padding{
+	padding: 2.5rem 0;
+}
+.comments-padding{
+	padding: 3.5rem 0;
+}
+.side-padding{
+	padding: 2rem;
+}

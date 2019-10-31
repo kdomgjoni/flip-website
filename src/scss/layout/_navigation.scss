@@ -1,0 +1,118 @@
+
+.header{
+	position: fixed;
+	top: 0;
+	left: 0; 
+	width: 10rem;
+	height: 100vh;
+	transition: all .5s;
+	@include respond(tab-port){
+		width: 100%;
+		height: 8rem;
+		top: auto;
+		bottom: 0 !important;
+		left: 0;
+		z-index: 2;
+		
+	}	
+	.hamburger{
+		display: none;
+		@include respond(tab-port){
+			z-index: 1;
+			display: flex;
+		    position: absolute;
+		    left: 50%;
+		    top: 0.5rem;
+		    transform: translate(-50%);
+
+		}
+	}
+	nav{
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		background-color: white;
+		padding: 2rem 0;
+		@include respond(tab-port){
+			background-color: #dedcdc;
+			box-shadow: 1px -5px 45px 1px rgba(0,0,0,0.75);
+			border-top-right-radius: 3rem;
+			border-top-left-radius: 3rem;
+		} 
+	}
+
+	&__search{
+		width: 2.5rem;
+		height: 2.5rem;
+		cursor: pointer;
+		.fa-search{
+			width: 100%;
+			height: 100%;
+		}
+		@include respond(tab-port){
+			position: absolute;
+			z-index: 1;
+			top: 3rem;
+			right:3rem;
+			input[type=text]{
+				padding: 0 0 .5rem 1rem;
+				font-size: 2rem;
+				position: absolute;
+			    right: 3rem;
+			    top: -8px;
+			    height: 4rem;
+			    width: 0;
+			    visibility: hidden;
+			    transition: all .5s;
+			    border-radius: 2rem;
+			    background-color: #bfbfbf;
+			    &:focus{
+			    	outline: none;
+			    }
+			    &::placeholder{
+			    	font-size: 2rem;
+			    }			
+			}
+		}
+	}
+	&__logo{
+		width: 6rem;
+		height: 6rem;
+		img{
+			width: 100%;
+			height: 100%;
+		}
+		@include respond(tab-port){
+			display: none;
+		}
+	}
+	.navigation-list{
+		padding: 5rem 0;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		height: 100%;
+		&__item{
+			transform: rotate(-90deg);
+			list-style: none;
+			cursor: pointer;
+			transition: all .5s;
+			@include respond(tab-port){
+				transform: rotate(0deg);
+				visibility: hidden;
+				opacity: 0;
+			}
+		}
+		&--link{
+			font-family: AFuturaOrtoBold;
+			font-size: 1.6rem;
+			color: #212121; 
+			text-transform: uppercase;
+			cursor: pointer;
+		}
+	}
+}

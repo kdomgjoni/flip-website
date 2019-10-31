@@ -1,0 +1,32 @@
+.comments{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	@include respond(phone){
+		flex-direction: column;
+		text-align: center;
+	}
+	&__image{
+		width: 10.4rem;
+		height: 10.4rem;
+		background-color: #000;
+		border-radius: 50%;
+		flex: none;
+	}
+	&__details{
+		padding-left: 3rem;
+		@include respond(phone){
+			padding: 2rem 0;
+		}
+		&--title{
+			font-family: AFuturaOrtoBold;
+			font-size: 1.6rem;
+			color: #000;
+		}
+		&--paragraph{
+			font-family: Futura-Medium;
+			font-size: 1.3rem;
+			color: $color-content;
+		}
+	}
+}

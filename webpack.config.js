@@ -102,10 +102,21 @@ module.exports = {
 		]
 	},
 	plugins: [
-		new HtmlWebPackPlugin({
+		new HtmlWebPackPlugin(
+		{
 			template: './src/index.html',
 			filename: './index.html'
 		}),
+		new HtmlWebPackPlugin(
+		{
+			template: './src/singlepost.html',
+			filename: './singlepost.html'
+		}),
+		new webpack.ProvidePlugin({
+	        $: 'jquery',
+	        jQuery: 'jquery',
+	        'window.jQuery': 'jquery'
+	    }),
 		new MiniCssExtractPlugin({
 	      // Options similar to the same options in webpackOptions.output
 	      // all options are optional

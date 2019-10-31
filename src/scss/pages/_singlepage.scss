@@ -1,0 +1,117 @@
+.content{
+	&__title{
+		padding: 2rem 2rem 0 2rem;
+		&--header{
+			font-family: 'Playfair Display', serif;
+			font-size: 3rem;
+		}
+		&--date{
+			padding: 2rem 0;
+			font-size: 1.6rem;
+			font-family: AFuturaOrtoBold;
+			color: $color-content;
+		}
+	}
+	&__description{
+		padding: 0 2rem;
+		&--firstParagraph{
+			font-size: 1.3rem;
+			font-family: Futura-Medium;
+			color: $color-content;
+		}
+		&--secondParagraph{
+			font-size: 1.6rem;
+			font-family: Futura-MediumItalic;
+			color: $color-content;
+		}
+		&--columnParagraph{
+			column-count: 2;
+			column-gap: 5rem;
+		}
+		&--thirdParagraph{
+			font-size: 1.3rem;
+			font-family: Futura-Medium;
+			color: $color-content;
+		}
+	}
+	&__socials{
+		display: flex;
+		justify-content: space-around;
+		@include respond(phone){
+			flex-wrap: wrap;
+			width: 50%;
+			margin: 0 auto;
+		}
+		a{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 11rem !important;
+			height: 4.5rem !important;
+			border-radius: .5rem;
+			color: #fff;
+			font-size: 2rem;
+			@include respond(phone){
+				margin-bottom: 2rem;
+			}
+			svg{
+				margin-right: 1.5rem;
+			}
+		}
+		&--facebook{
+			background-color: #3B5998;
+			border: .1rem solid #21335B;
+		}
+		&--tweet{
+			background-color: #00ABF0;
+			border: .1rem solid #0082BE;
+		}
+		&--pin{
+			background-color: #CB2027;
+			border: .1rem solid #AA2B1D;
+		}
+		&--google{
+			background-color:#DD4B39;
+			border: .1rem solid #AA2B1D;
+		}
+	}
+	&__comment{
+		padding: 3.5rem 2rem;
+	}
+	&__addComment{
+		background-color: #EFEFEF;
+		padding: 2rem;
+		form{
+			display: flex;
+			flex-direction: column;
+			.form__heading{
+				font-size: 1.6rem;
+				font-family: AFuturaOrtoBold;
+				text-transform: uppercase;
+			}
+			input[type=text]{
+				width: 80%;
+				height: 4.9rem;
+				&::placeholder{
+					padding-left: 2rem;
+				}
+			}
+			textarea{
+				width: 80%;
+				height: 8.9rem;
+				&::placeholder{
+					padding: 2rem;
+				}
+			}
+			.btn-submit{
+				width: 7.6rem;
+				height: 3rem;
+				background-color: #C71E65;
+				color: #fff;
+				border: none;
+
+			}	
+		}
+		
+	}
+}

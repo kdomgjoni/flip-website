@@ -1,5 +1,8 @@
 
 @import "../../node_modules/normalize.css/normalize.css";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/hamburgers/_sass/hamburgers/hamburgers";
+
 
 @import "abstracts/functions";
 @import "abstracts/mixins";
@@ -11,37 +14,13 @@
 @import "base/utilities";
 @import "base/font";
 
+@import "components/article";
+@import "components/comments";
+
+@import "layout/navigation";
 @import "layout/grid";
 
-
-body{
-	display: flex;
-}
-
-header{
-	width: 30px;
-	height: 100vh;
-	background-color: red;
-	position: relative !important;
-	nav{
-		height: 100%;
-		position: fixed;
-	}
-}
-.image{
-	position: relative;
-	height: 100vh;
-	width: 50%;
-	background-color: brown;
-	&_test{
-		height: 100%;
-		position: fixed;
-	}
-}
-
-.description{
-	position: relative;
-	width: 50%;
-}
+@import "pages/home";
+@import "pages/singlepage"
 
 
