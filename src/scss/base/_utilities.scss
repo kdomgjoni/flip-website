@@ -1,6 +1,7 @@
 .main-container{
 	width: 100%;
 	padding: 0 10rem;
+	transition: all .5s;
 	@include respond(tab-port){
 		padding: 0;
 	}
@@ -8,24 +9,45 @@
 .no-padding{
 	padding: 0;
 }
+.main-section-blur{
+	filter: blur(8px);
+	transition: all .5s;
+}
 .footer-margin{
-	margin-bottom: 13rem;
 	display: flex;
 	justify-content: flex-end;
-	padding: 2rem;
 	h1{
+		padding: 2rem 0;
 		font-family: Futura-Medium;
 		font-size: 1.3rem;
+		width: 50%;
+		display: flex;
+		justify-content: center;
+		color: $color-content;
+		border-top: .2rem solid #EFEFEF;
+		@include respond(tab-port){
+			width: 100%;
+		}
+	}
+	@include respond(tab-port){
+		margin-bottom: 13rem;
+	}
+}
+.search-active{
+	width: 25rem !important;
+	visibility: visible !important;
+	@include respond(tab-port){
+		width: 25rem !important;
 	}
 }
 @include respond(tab-port){
-	 .tablet{
+	.tablet{
 		padding-right: 0;
 	    padding-left: 0; 
 	    flex: 0 0 100%;
     	max-width: 100%;
-	 }
-	 .row-responsiv{
+	}
+	.row-responsiv{
 	 	margin: 0;
 	 }
 
@@ -39,14 +61,13 @@
 		visibility: visible !important;
 		opacity: 1 !important;
 	}
-	.search-active{
-	    width: 25rem !important;
-		visibility: visible !important;
-		transform-origin: center;
+	.center{
+		display: flex;
+		justify-content: center;
 	}
 }
 .blue-image{
-	background-color: #034F84 !important;
+	background-image: url('/../../src/images/comments.jpg') !important;
 }
 .content-padding{
 	padding: 2.5rem 0;
@@ -56,4 +77,17 @@
 }
 .side-padding{
 	padding: 2rem;
+}
+
+.button{
+	width: 7.6rem;
+	height: 3rem;
+	color: #fff;
+	border: none;
+	font-family: AFuturaBold;
+	letter-spacing: .1rem;
+	text-transform: uppercase;
+}	
+.category-padding-button{
+	padding: 5rem 0;
 }

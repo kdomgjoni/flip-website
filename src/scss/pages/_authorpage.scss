@@ -1,0 +1,60 @@
+.author{
+	@include respond(tab-port){
+		padding: 2rem;
+	}
+	&__header{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		padding: 3rem 0;
+		border-bottom: .2rem solid #EFEFEF;
+		@include respond(tab-port){
+			padding: 0;
+		}
+		&--ment{
+			color: $color-main;
+			font-size: 1.6rem;
+			font-family: AFuturaOrtoBold;
+			text-transform: uppercase;
+		}
+		&--name{
+			font-family: PlayfairDisplay;
+			font-size: 3rem;
+			color: #000;	
+		}
+		&--desc{
+			font-family: Futura-Medium;
+			font-size: 1.3rem;
+			color: $color-content;
+		}
+		&--socials{
+			a{
+				padding: 1rem 2rem;
+				border-top-left-radius: .5rem;
+				border-bottom-left-radius: .5rem;
+				color: #fff;
+			}
+			.facebook{
+				background-color: #39579A;
+			}
+
+			.twitter{
+				background-color: #1AA9E4;
+			}
+			.pinterest{
+				background-color: #DB2814;
+			}
+			.google{
+				background-color: #CA2026;
+			}
+		}
+	}
+	&__articles{
+		&--heading{
+			padding: 3rem 0;
+			font-family: AFuturaOrtoBold;
+			font-size: 1.6rem;
+			color: $color-main;
+		}
+	}
+}

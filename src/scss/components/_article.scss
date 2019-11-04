@@ -1,7 +1,6 @@
 .article{
-	
 	&__image{
-		/* background-image: url('/../../images/image.jpg'); */
+		background-image: url('/../../src/images/main_article.jpg');
 		background-size: cover;
 		display: flex;
 		flex-direction: column;
@@ -10,7 +9,6 @@
 		align-items: center;
 		width: 40%;
 		height: 100vh;
-		background-color: #212121;
 		@include respond(tab-port){
 			position: relative;
 			width: 100%
@@ -24,6 +22,10 @@
 		h3{
 			font-family: 'Playfair Display', serif;
 			font-size: 3rem;
+			a{
+				text-decoration: none;
+				color: #fff;
+			}
 		}
 	}
 	&__date{
@@ -36,8 +38,7 @@
 		background-color: $color-main;
 		p{
 			font-size: 1.6rem;
-			font-family: 'Playfair Display';
-			font-style: regular;
+			font-family: 'AFuturaOrtoBold';
 			margin:0;
 			color: #fff;
 			position: relative;

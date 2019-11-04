@@ -1,0 +1,56 @@
+.category{
+	padding: 2rem;
+	&__button{
+		.button-header{
+			padding: 1.5rem 2rem;
+			background-color: $color-main;
+			color: #fff;
+			font-family: AFuturaOrtoBold;
+			font-size: 1.3rem;
+			text-transform: uppercase;
+			letter-spacing: .1rem;
+		}
+	}
+	&__list{
+		list-style: none;
+	}
+	&__item{
+		border-top: .2rem solid #EFEFEF;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: 15rem;
+		@include respond(tab-port){
+			justify-content: center;
+		}
+		img{
+			height: auto;
+			width: 17rem;
+		}
+		&--content{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			margin-left: 2rem;
+		}
+		&--header{
+			font-family: 'Playfair Display', serif;
+			font-size: 2rem;
+			color: #000;
+			margin-bottom: 2rem; 
+		}
+		&--date{
+			font-family: AFuturaOrtoBold;
+			font-size: 1.3rem;
+			color: $color-content;
+		}
+	}
+	.group{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		@include respond(tab-port){
+			justify-content: flex-start;
+		}
+	}
+}

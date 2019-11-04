@@ -112,6 +112,27 @@ module.exports = {
 			template: './src/singlepost.html',
 			filename: './singlepost.html'
 		}),
+		new HtmlWebPackPlugin(
+		{
+			template: './src/category.html',
+			filename: './category.html'
+		}),
+		new HtmlWebPackPlugin(
+		{
+			template: './src/authorpage.html',
+			filename: './authorpage.html'
+		}),
+		new HtmlWebPackPlugin(
+		{
+			template: './src/searchpost.html',
+			filename: './searchpost.html'
+		}),
+		new HtmlWebPackPlugin(
+		{
+			template: './src/contact.html',
+			filename: './contact.html'
+		}),
+		
 		new webpack.ProvidePlugin({
 	        $: 'jquery',
 	        jQuery: 'jquery',

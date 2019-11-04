@@ -1,0 +1,52 @@
+.map{
+	width: 40%;
+	height: 100vh;
+	position: fixed !important;
+	@include respond(tab-port){
+		position: relative !important;
+		width: 100%
+	}
+}
+.contact{
+	@include respond(tab-port){
+		padding: 2rem;
+	}
+	&__text{
+		padding: 3rem 0;
+		&--ment{
+			font-family: AFuturaOrtoBold;
+			font-size: 1.6rem;
+			color: $color-main;
+			text-transform: uppercase;
+		}
+		&--title{
+			font-family: PlayfairDisplay-Regular;
+			font-size: 3rem;
+		}
+	}
+	&__form{
+		input[type=text], textarea{
+			font-family: Futura-Medium;
+			font-size: 1.6rem;
+			border: none;
+			border-bottom: .2rem solid #D2D2D2;
+			width: 100%;
+			padding: 2rem 0;
+			outline: none;
+			height: 50%;
+		}
+		.form-contact{
+			background-color: $color-main;
+			margin: 3rem 0;
+			font-size: 1.3rem;
+		}
+	}
+}
+.contact-footer{
+	position: absolute;
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+    width: 100%;
+    justify-content: flex-end;
+}

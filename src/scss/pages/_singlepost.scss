@@ -27,6 +27,8 @@
 		&--columnParagraph{
 			column-count: 2;
 			column-gap: 5rem;
+			font-size: 1.3rem;
+			font-family: Futura-Medium;
 		}
 		&--thirdParagraph{
 			font-size: 1.3rem;
@@ -51,6 +53,10 @@
 			border-radius: .5rem;
 			color: #fff;
 			font-size: 2rem;
+			font-family: Ubuntu;
+			&:hover{
+				text-decoration: none;
+			}
 			@include respond(phone){
 				margin-bottom: 2rem;
 			}
@@ -103,14 +109,9 @@
 					padding: 2rem;
 				}
 			}
-			.btn-submit{
-				width: 7.6rem;
-				height: 3rem;
-				background-color: #C71E65;
-				color: #fff;
-				border: none;
-
-			}	
+			.form-submit{
+				background-color: $color-main;
+			}
 		}
 		
 	}
