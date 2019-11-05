@@ -13,6 +13,7 @@
 	filter: blur(8px);
 	transition: all .5s;
 }
+
 .footer-margin{
 	display: flex;
 	justify-content: flex-end;
@@ -34,10 +35,9 @@
 	}
 }
 .search-active{
-	width: 25rem !important;
-	visibility: visible !important;
 	@include respond(tab-port){
 		width: 25rem !important;
+		visibility: visible !important;
 	}
 }
 @include respond(tab-port){
