@@ -55,8 +55,8 @@ module.exports = {
 		      exclude: /node_modules/,
 		      loader: 'url-loader',
 		      options: {
-		      	outputPath: '../dist/fonts/',
-		        publicPath: 'fonts/',
+		      	outputPath: './fonts/',
+		      	publicPath: '../fonts',
 		        name: '[name].[ext]',
 		        limit: 1000
 		      }
@@ -65,11 +65,13 @@ module.exports = {
 			  test: /\.(gif|png|jpe?g|svg)$/i,
 			  use: [
 			    	{
-			  		loader: 'file-loader',
+			  		loader: 'url-loader',
 			  		options: {
 			  			name: "[name].[ext]",
 				      	outputPath: './images/',
-				      	publicPath: 'images/',
+				      	
+				      	/*outputPath is place where your want to save files
+						publicPath is what url you have in js, css and etc files.*/
 			  		}
 			  	},
 			    {

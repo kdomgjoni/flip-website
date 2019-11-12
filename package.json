@@ -1,3 +1,4 @@
+
 {
   "name": "flip-website",
   "version": "1.0.0",
@@ -5,7 +6,7 @@
   "main": "postcss.config.js",
   "scripts": {
     "build": "webpack",
-    "start:dev": "webpack-dev-server --port 8080 --hot --host 192.168.1.105 -w"
+    "start:dev": "webpack-dev-server"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",

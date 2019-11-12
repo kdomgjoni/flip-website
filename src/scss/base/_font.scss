@@ -3,42 +3,29 @@
 
 @font-face {
   font-family: 'AFuturaOrtoBold';
-  src: url('/../../src/fonts/AFuturaOrtoBold.eot'); /* IE9 Compat Modes */
-  src: url('/../../src/fonts/AFuturaOrtoBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('/../../src/fonts/AFuturaOrtoBold.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/../../src/fonts/AFuturaOrtoBold.woff') format('woff'), /* Pretty Modern Browsers */
-       url('/../../src/fonts/AFuturaOrtoBold.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('/../../src/fonts/AFuturaOrtoBold.svg#svgFontName') format('svg'); /* Legacy iOS */
-}
+  src: url('./../fonts/AFuturaOrtoBold.ttf')  format('truetype'), /* Safari, Android, iOS */
 
+}
+ 
 @font-face {
   font-family: 'Futura-Medium';
-  src: url('/../../src/fonts/Futura-Medium.eot'); /* IE9 Compat Modes */
-  src: url('/../../src/fonts/Futura-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('/../../src/fonts/Futura-Medium.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/../../src/fonts/Futura-Medium.woff') format('woff'), /* Pretty Modern Browsers */
-       url('/../../src/fonts/Futura-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('/../../src/fonts/Futura-Medium.otf')  format('truetype'),
-       url('/../../src/fonts/Futura-Medium.svg#svgFontName') format('svg'); /* Legacy iOS */
+  src: url('./../fonts/Futura-Medium.ttf')  format('truetype');
+  src: url('./../fonts/Futura-Medium.otf')  format('truetype');     
 }
 
 @font-face {
   font-family: 'Futura-MediumItalic';
-  src: url('/../../src/fonts/Futura-MediumItalic.eot'); /* IE9 Compat Modes */
-  src: url('/../../src/fonts/Futura-MediumItalic?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('/../../src/fonts/Futura-MediumItalic.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/../../src/fonts/Futura-MediumItalic.woff') format('woff'), /* Pretty Modern Browsers */
-       url('/../../src/fonts/Futura-MediumItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('/../../src/fonts/Futura-MediumItalic.otf')  format('truetype'),
-       url('/../../src/fonts/Futura-MediumItalic.svg#svgFontName') format('svg'); /* Legacy iOS */
+  src: url('./../fonts/Futura-MediumItalic.ttf')  format('truetype');
+  src: url('./../fonts/Futura-MediumItalic.otf')  format('truetype');     
 }
+/* 
 @font-face {
   font-family: 'Segoeui';
-  src: url('/../../src/fonts/latest.eot'); /* IE9 Compat Modes */
-  src: url('/../../src/fonts/latest?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('/../../src/fonts/latest.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/../../src/fonts/latest.woff') format('woff'), /* Pretty Modern Browsers */
-       url('/../../src/fonts/latest.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('/../../src/fonts/latest.otf')  format('truetype'),
-       url('/../../src/fonts/latest.svg#svgFontName') format('svg'); /* Legacy iOS */
-}
+  src: url('/../fonts/latest.eot'); IE9 Compat Modes
+  src: url('/../fonts/latest?#iefix') format('embedded-opentype'), IE6-IE8
+       url('/../fonts/latest.woff2') format('woff2'), Super Modern Browsers
+       url('/../fonts/latest.woff') format('woff'), Pretty Modern Browsers
+       url('/../fonts/latest.ttf')  format('truetype'), Safari, Android, iOS
+       url('/../fonts/latest.otf')  format('truetype'),
+       url('/../fonts/latest.svg#svgFontName') format('svg'); Legacy iOS
+}  */
